@@ -4,7 +4,8 @@
       "command": "npx",
       "args": [
         "@playwright/mcp@latest",
-        "--headed"
+        "--cdp-endpoint",
+        "http://localhost:9222"
       ]
     },
     "chrome-devtools": {
@@ -12,7 +13,8 @@
       "args": [
         "-y",
         "chrome-devtools-mcp@latest",
-        "--no-usage-statistics"
+        "--no-usage-statistics",
+        "--browser-url=http://127.0.0.1:9222"
       ]
     }
   }
